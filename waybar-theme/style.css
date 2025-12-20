@@ -1,0 +1,300 @@
+@import "../omarchy/current/theme/waybar.css";
+
+/* Catppuccin Frappe palette */
+@define-color base #303446;
+@define-color surface #414559;
+@define-color overlay #737994;
+@define-color muted #838ba7;
+@define-color subtle #a5adce;
+@define-color text #c6d0f5;
+@define-color love #e78284;
+@define-color gold #e5c890;
+@define-color rose #ef9f76;
+@define-color pine #99d1db;
+@define-color foam #a6d189;
+@define-color iris #babbf1;
+@define-color highlight_low #414559;
+@define-color highlight_med #51576d;
+@define-color highlight_high #626880;
+
+/* --- Global-Settings ---*/
+
+* {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 0px;
+  }
+
+  /* --- Waybar ---*/
+  window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+window#waybar.empty #window {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+#waybar.empty .modules-center {
+  opacity: 0;
+}
+
+/* --- Tooltip ---*/
+tooltip {
+  opacity: 1;
+
+ }
+
+/* --- Workspaces --- */
+#workspaces {
+  border-radius: 6px;
+  margin: 6px 3px;
+}
+
+#workspaces button {
+  padding: 0px 2px;
+  margin: 0 3px 0 0;
+  border-radius: 6px;
+  background-color: @surface;
+  color: @text;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+#workspaces button.active {
+    background-color: @gold;
+    color: @base;
+}
+
+#workspaces button:hover {
+    background-color: @highlight_med;
+    color: @gold;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+  background-color: @surface;
+  color: @subtle;
+}
+
+
+/* --- General Modules --- */
+
+#tray,
+#window,
+#mpris,
+#cpu,
+#clock,
+#battery,
+#network,
+#memory,
+#backlight,
+#bluetooth,
+#pulseaudio,
+#custom-weather,
+#custom-update,
+#idle_inhibitor,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-updatespacman {
+  min-width: 14px;
+  margin: 6px 3px 6px 3px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Hover right module  --- */
+#clock:hover,
+#tray:hover,
+#custom-expand-icon:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#battery:hover,
+#bluetooth:hover,
+#backlight:hover,
+#custom-omarchy:hover,
+#custom-weather:hover,
+#custom-update:hover,
+#idle_inhibitor:hover,
+#custom-screenrecording-indicator,
+#custom-updatespacman:hover,
+#network:hover,
+#pulseaudio:hover {
+  border-radius: 6px;
+  opacity: 0.9;
+  background-color: @highlight_high;
+  color: @text;
+}
+
+/* --- Gruvebox-Colors-Module --- */
+#window {
+    background-color: @highlight_low;
+    color: @gold;
+}
+
+#custom-omarchy {
+  background-color: @surface;
+  color: @gold;
+}
+
+#custom-update, #custom-updatespacman {
+  background-color: @pine;
+  color: @base;
+}
+
+#clock {
+    background-color: @surface;
+    color: @gold;
+}
+#idle_inhibitor {
+    background-color: @muted;
+    color: @base;
+}
+
+#idle_inhibitor.activated {
+    background-color: @foam;
+    color: @base;
+}
+
+#idle_inhibitor.deactivated {
+    background-color: @muted;
+    color: @base;
+}
+
+#custom-weather {
+    background-color: @rose;
+    color: @base;
+}
+
+#tray {
+    background-color: @overlay;
+    color: @gold;
+}
+
+#battery {
+    background-color: @foam;
+    color: @base;
+}
+
+#cpu {
+    background-color: @gold;
+    color: @base;
+}
+
+#memory {
+    background-color: @pine;
+    color: @base;
+}
+
+#network {
+    background-color: @iris;
+    color: @base;
+}
+
+#pulseaudio {
+    background-color: @love;
+    color: @base;
+}
+
+#backlight {
+    background-color: @rose;
+    color: @base;
+}
+
+#bluetooth {
+       background-color: @foam;
+    color: @base;
+}
+
+
+/* Specific Module */
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    color: @gold;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @transparent;
+    color: @gold;
+}
+
+#tray * {
+  color: @gold;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+tooltip {
+ padding: 4px;
+ background-color: @surface;
+ border: 1px solid @highlight_med;
+ border-radius: 6px;
+ font-size: 12px;
+ 
+}
+tooltip label {
+    color: @text;
+    font-weight: normal;
+}
+
+
+/* --- Warnings --- */
+#cpu.critical,
+#memory.critical,
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    background-color: @love;
+    color: @base;
+}
+
+/* Specific animation Module */
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: @love;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+    to {
+        color: @surface;
+    }
+}
+
+#mpris {
+    background-color: @iris;
+    color: @base;
+animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: @highlight_med;
+        
+    }
+}
