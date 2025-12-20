@@ -46,6 +46,10 @@ window#waybar.empty #window {
   opacity: 0;
 }
 
+.modules-center {
+  margin: 0 8px;
+}
+
 /* --- Tooltip ---*/
 tooltip {
   opacity: 1;
@@ -55,7 +59,7 @@ tooltip {
 /* --- Workspaces --- */
 #workspaces {
   border-radius: 6px;
-  margin: 6px 3px;
+  margin: 6px 3px 12px 3px;
 }
 
 #workspaces button {
@@ -64,7 +68,7 @@ tooltip {
   border-radius: 6px;
   background-color: @surface;
   color: @text;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 6px -2px rgba(0, 0, 0, 0.8);
 }
 
 #workspaces button.active {
@@ -104,10 +108,10 @@ tooltip {
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   min-width: 14px;
-  margin: 6px 3px 6px 3px;
+  margin: 6px 3px 12px 3px;
   padding: 4px 8px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 6px -2px rgba(0, 0, 0, 0.8);
 }
 
 /* --- Hover right module  --- */
@@ -157,6 +161,7 @@ tooltip {
 #idle_inhibitor {
     background-color: @muted;
     color: @base;
+    margin-right: 10px;
 }
 
 #idle_inhibitor.activated {
@@ -282,6 +287,7 @@ tooltip label {
 }
 
 #mpris {
+    margin-right: 10px;
     background-color: @iris;
     color: @base;
 animation: repeat;
