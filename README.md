@@ -11,7 +11,7 @@ GTA VI-inspired Catppuccin Frappe color scheme for Omarchy Linux.
 Use the normal Omarchy theme install method:
 
 ```bash
-omarchy theme install /path/to/omarchy-florida-man-theme
+omarchy-theme-install https://github.com/OldJobobo/omarchy-florida-man-theme
 ```
 
 ## Wallpapers
