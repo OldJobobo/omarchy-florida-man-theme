@@ -14,28 +14,12 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-florida-man-theme
 
 ## Wallpapers
 
-<table>
-  <tr>
-    <td><img alt="ambrosia-gta-6-2026-3840x2160-24212" src="backgrounds/ambrosia-gta-6-2026-3840x2160-24212.png"></td>
-    <td><img alt="grassrivers-gta-6-3840x2160-24213" src="backgrounds/grassrivers-gta-6-3840x2160-24213.png"></td>
-    <td><img alt="gta-6-port-gellhorn-3840x2160-24225" src="backgrounds/gta-6-port-gellhorn-3840x2160-24225.png"></td>
-  </tr>
-  <tr>
-    <td><img alt="leonida-keys-gta-6-3840x2160-24214" src="backgrounds/leonida-keys-gta-6-3840x2160-24214.png"></td>
-    <td><img alt="mount-kalaga-3840x2160-24215" src="backgrounds/mount-kalaga-3840x2160-24215.png"></td>
-    <td><img alt="vice-city-grand-3840x2160-24218" src="backgrounds/vice-city-grand-3840x2160-24218.png"></td>
-  </tr>
-  <tr>
-    <td><img alt="brian-herder-gta-6-3840x2160" src="backgrounds/brian-herder-gta-6-3840x2160.png"></td>
-    <td><img alt="cal-hampton-gta-6-3840x2160" src="backgrounds/cal-hampton-gta-6-3840x2160.png"></td>
-    <td><img alt="gta-6-ps-store-3840x2160" src="backgrounds/gta-6-ps-store-3840x2160.png"></td>
-  </tr>
-  <tr>
-    <td><img alt="raul-bautista-gta-6-3840x2160" src="backgrounds/raul-bautista-gta-6-3840x2160.png"></td>
-    <td><img alt="real-dimez-gta-6-3840x2160" src="backgrounds/real-dimez-gta-6-3840x2160.png"></td>
-    <td></td>
-  </tr>
-</table>
+| | | |
+| --- | --- | --- |
+| ![](backgrounds/0-mud-monster.png) | ![](backgrounds/1-marina-garage.png) | ![](backgrounds/2-mangrove-causeway.png) |
+| ![](backgrounds/3-gator-tour.png) | ![](backgrounds/4-motel-iguana.png) | ![](backgrounds/5-vice-marina.png) |
+| ![](backgrounds/6-beach-shades.png) | ![](backgrounds/7-firewatch-eagle.png) | ![](backgrounds/8-mural-lot.png) |
+| ![](backgrounds/9-ocean-view-hotel.png) | ![](backgrounds/10-lifeguard-dusk.png) |  |
 
 ## Attribution
 
