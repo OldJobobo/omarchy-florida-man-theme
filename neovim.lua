@@ -58,13 +58,13 @@ if has_catppuccin_in_user_plugins() then
       },
       config = function(_, opts)
         require("catppuccin").setup(opts)
-        vim.cmd.colorscheme("catppuccin")
+        vim.cmd.colorscheme("catppuccin-nvim")
       end,
     },
     {
       "LazyVim/LazyVim",
       opts = {
-        colorscheme = "catppuccin",
+        colorscheme = "catppuccin-nvim",
       },
     },
   }
